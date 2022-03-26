@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+  <script src="firebase.js"></script>
+  
+ 
+  
+  <title>Frontend Mentor | Todo app</title>
+
+</head>  
+<body>
+
+  <div class="background-image">
+    <img class="dark" src="./images/bg-desktop-dark.jpg" alt="">
+    <!-- <img class="light" src="./images/bg-desktop-light.jpg" alt=""> -->
+  </div>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        TODO
+      </div>
+      <div class="theme">
+        <img class="sun" src="./images/icon-sun.svg" alt="">
+        <!-- <img class="moon" src="./images/icon-moon.svg" alt=""> -->
+      </div>
+    </div>
+    <div class="new-todo">
+      <div class="check">
+        <div class="check-mark">
+           
+        </div>
+      </div>
+      <div class="new-todo-input">
+        <form onsubmit="addItem(event)">
+            <input id="todo-input" type="text" placeholder="Create a new todo....">
+        </form>
+  
+      </div>
+  
+    </div>
+    <div class="todo-items-wrapper">
+      <div class="todo-items">
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="./images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Cut the lawn 
+          </div>
+        </div>
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="./images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Make a Biryani
+          </div>
+        </div>
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="./images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Go to Gym
+          </div>
+        </div>
+
+      </div>
+      <div class="todo-items-info">
+        <div class="items-left">
+          <h4 id="left">7</h4>
+        </div>
+        <div class="items-statues">
+          <span id="all" class="active">All</span>
+          <span id="active">Active</span>
+          <span id="completed">Completed</span>
+        </div>
+        <div class="items-clear">
+          <span>Clear Completed</span>
+        </div>
+
+
+      </div>
+  </div>
+
+ </div> 
+
+ <script src="app.js"></script>
+
+</body>
+</html>
